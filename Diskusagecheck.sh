@@ -13,6 +13,4 @@ var=$(echo "${array[1]}"| grep -aob '%' | grep -oE '[0-9]+')
 
 echo "$var" 
 
-echo "${array[1]:$var-3:4}" 
 
-echo "${array[1]:$var-3:4}" | tr --delete '%G' # returns 20
