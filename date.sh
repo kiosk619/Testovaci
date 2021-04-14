@@ -1,7 +1,8 @@
 /bin/sh -xe
-Den=$(date | cut –d „ „ –f 1)
 
-Case $den in
+Den=$(date|cut –d „ „ –f1)
+
+Case $Den in
 Mon|Tue)
 	Echo Eh, to lazy to start yet;;
 Wed|)
