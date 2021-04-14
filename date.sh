@@ -2,4 +2,4 @@
 
 date=$(date)
 
-echo "$date"
+echo " Dnes je $date"
