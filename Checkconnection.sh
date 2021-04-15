@@ -1,7 +1,5 @@
 /bin/sh -xe
 
-if ping -q -c 1 -W 1 google.com >/dev/null; then
-  echo "The network is up"
-else
-  echo "The network is down"
+if nc -zw1 google.com 443; then
+  echo "we have connectivity"
 fi
