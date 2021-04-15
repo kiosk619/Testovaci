@@ -1,7 +1,7 @@
 /bin/sh -xe
 
-if ping -q -c 1 -W 1 8.8.8.8 >/dev/null; then
-  echo "IPv4 is up"
+if ping -q -c 1 -W 1 google.com >/dev/null; then
+  echo "The network is up"
 else
-  echo "IPv4 is down"
+  echo "The network is down"
 fi
